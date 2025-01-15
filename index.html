@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Image</title>
+    <title>Full Screen Image</title>
     <style>
         body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Optional: Black background for better contrast */
         }
         img {
-            width: 200px; /* Adjust image size here */
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fills the screen while preserving aspect ratio */
         }
     </style>
 </head>
 <body>
-    <img src="cone_image.png" alt="My Image">
+    <img src="cone_image.png" alt="Full Screen Image">
 </body>
 </html>
